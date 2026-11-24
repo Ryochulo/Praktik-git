@@ -1,0 +1,202 @@
+/* ==========================
+   GLOBAL STYLE
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --dark: #0f172a;
+    --text: #475569;
+    --light: #f8fafc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #dbeafe;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section {
+    background: white;
+    max-width: 1000px;
+    width: 90%;
+    margin: 55px auto;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.09);
+}
+
+section h2 {
+    color: var(--primary-dark);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: var(--primary);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+section p {
+    color: var(--text);
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+/* ==========================
+   PROFILE SECTION
+========================== */
+
+#profil p {
+    background: #f1f5f9;
+    padding: 14px 18px;
+    border-radius: 9px;
+    border-left: 4px solid var(--primary);
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+#kontak p {
+    color: #334155;
+    font-weight: 500;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    background: var(--dark);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 80px;
+    font-size: 13px;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 20px;
+        padding: 15px 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        width: 92%;
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+}
